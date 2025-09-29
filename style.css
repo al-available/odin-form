@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.picture{
+    width: 600px;
+    height: 900px;
+    background-image: url('halie-west-25xggax4bSA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+
+}
+.formContainer{
+    width: 840px;
+    height: 900px;
+    background-color: rgb(236, 248, 255);
+}
+.insideContainer{
+    width: 600px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.456);
+    margin-top: 200px;  
+    display: flex;
+    justify-content: center;
+}
+.odinPicture{
+    background-image: url('odin-lined.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+
+}
+.innerText{
+  font-family: "Agu Display", serif;
+align-self: center;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+  color: white;
+  font-size: 100px;
+
+}
+p{
+
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    font: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.nextLine{
+    margin-top: 10px;
+}
