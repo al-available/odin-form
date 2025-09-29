@@ -11,7 +11,7 @@
 .picture{
     width: 600px;
     height: 900px;
-    background-image: url('halie-west-25xggax4bSA-unsplash.jpg');
+    background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     
@@ -31,7 +31,7 @@
     justify-content: center;
 }
 .odinPicture{
-    background-image: url('odin-lined.png');
+    background-image: url('odinLogo.png');
     background-repeat: no-repeat;
     background-size: contain;
     width: 100px;
