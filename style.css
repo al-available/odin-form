@@ -20,7 +20,7 @@
 .formContainer{
     width: 840px;
     height: 900px;
-    background-color: rgb(236, 248, 255);
+    background-color: rgb(245, 251, 255);
 }
 .insideContainer{
     width: 600px;
@@ -56,9 +56,87 @@ p{
     font-size: 20px;
     font-weight: 900;
     font: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 .nextLine{
+    margin-top: 30px;
+}
+.formBox{
+    margin-top: 50px;
+    width: 840px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgb(69, 68, 68);
+
+
+}
+.formSet{
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+    justify-content: left;
+}
+.formText{
+    margin-top: 20px; 
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    
+
+}
+label{
+    display: block;
+    font-size: 13px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
     margin-top: 10px;
+}
+input{
+    width: 250px;
+    height: 30px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.648);
+    border-radius: 5px;
+}
+input:focus{
+    box-shadow: 5px 5px 10px black;
+    font-size: 15px;
+}
+input:valid{
+    border-color: green;
+}
+.password:invalid{
+    border-color: red;
+}
+
+fieldset{
+    border-style: none;
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+.submitContainer{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+button{
+    padding: 10px 50px 10px 50px ;
+    border-radius: 10px;
+    border:none ;
+    background-color: rgb(5, 165, 5) ;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.submitLink{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.logLink{
+    color:rgb(5, 165, 5)  ;
+    text-decoration: none;
 }
