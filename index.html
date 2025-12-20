@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Ga+Maamli&display=swap" rel="stylesheet">
+<script src="index.js" defer></script>
     <title>Odin Form</title>
 </head>
 <body>
@@ -24,32 +25,32 @@
         <p class="nextLine">    You know you want to.</p>
         <div class="formBox"  >
             <legend class="formText"> let's do this!</legend>      
-            <form class="formSet" action="#" method="post">
+            <form class="formSet" action="#" method="post" novalidate>
 
                 <fieldset class="set1">
                     <label for="firstName"> FIRST NAME</label>
-                    <input type="text" name="firstName" minlength="3" maxlength="10" required>
+                    <input type="text" name="firstName" id="firstName" minlength="3" maxlength="10" required>
 
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" id="email" required>
 
                     <label for="password">PASSWORD</label>
-                    <input type="password" class="password" name="password" required>
+                    <input type="password" class="password" id="password" name="password" required>
                 </fieldset class="set2">
                 <fieldset>
                     <label for="lastName"> LAST NAME</label>
-                    <input type="text" name="lastName" required>
+                    <input type="text" name="lastName" id="lastName" required>
 
                     <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="text" name="phoneNumber" required>
+                    <input type="number" name="phoneNumber" id="phoneNumber" required>
 
                     <label for="confrimPassword">CONFRIM PASSWORD</label>
-                    <input type="password" class="password" name="confrimPassword" required>
+                    <input type="password" class="password" name="confrimPassword" id="confrimPassword" required>
                 </fieldset>
             </form>
         </div>
         <div class="submitContainer">
-            <button type="submit"><a href="#" class="submitLink">Create Account</a></button>
+            <button type="submit" id="submitBtn"><a href="#" class="submitLink">Create Account</a></button>
             <h3>Already have an account? <a href="#" class="logLink">Log in</a></h3>
         </div>
         </div>
