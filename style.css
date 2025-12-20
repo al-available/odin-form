@@ -110,7 +110,7 @@ input:valid{
     border-color: green;
 }
 .password:invalid{
-    border-color: red;
+    border-color: rgb(47, 255, 0);
 }
 
 fieldset{
@@ -130,6 +130,10 @@ button{
     background-color: rgb(5, 165, 5) ;
     cursor: pointer;
     margin-bottom: 20px;
+}
+button:hover{
+    box-shadow: 5px 5px 10px black;
+    background-image: linear-gradient(to right,green, rgba(255, 255, 255, 0.468));
 }
 .submitLink{
     font-size: 20px;
