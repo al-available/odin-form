@@ -40,15 +40,66 @@ function clearForm(){
 }
 
 
+
+function firstValidate(){
+    if(firstName.value==""){
+        alert('your first name input is empty')
+    }
+    else{
+        return console.log('passed')
+    }
+}
+function lastValidate(){
+    if(lastName.value==""){
+        alert('your last name input is empty')
+    }
+    else{
+        return console.log('passed')
+    }
+}
+function phoneValidate(){
+    if(phoneNumber.value==""){
+        alert('your phone number input is empty')
+    }
+    else{
+        return console.log('passed')
+    }
+}
+function emailValidate(){
+    if(!email.value.endsWith('@gmail.com') ){
+        alert('incorrect email')
+    }
+    else{
+        return console.log('passed')
+    }
+}
+function passwordValidate(){
+    if(password.value !== confrimPassword.value){
+        alert('the passwords do not much')
+    }
+}
+
 submitBtn.addEventListener('click',(e)=>{
     console.log('clicked')
     e.preventDefault()
     const user =new formInfo(firstName.value,email.value,password.value,lastName.value,phoneNumber.value,confrimPassword.value)
     addToStorement(user)
-    console.log(storementArea)
-    clearForm()
-})
 
+    console.log(storementArea)
+
+    // input validation
+    firstValidate()
+    lastValidate()
+    phoneValidate()
+    emailValidate()
+    passwordValidate()
+    
+    // clear form 
+    clearForm()
+
+    
+
+})
 
 
 
