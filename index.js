@@ -39,67 +39,60 @@ function clearForm(){
     confrimPassword.value=""
 }
 
+// ... keep your variable declarations and class as they are ...
 
+function validationCheck() {
+    // 1. Check for empty fields
+    if (firstName.value === "" || lastName.value === "" || phoneNumber.value === "") {
+        alert('Please fill in all name and phone fields');
+        return false;
+    }
 
-function firstValidate(){
-    if(firstName.value==""){
-        alert('your first name input is empty')
+    // 2. Email validation
+    if (!email.value.endsWith('@gmail.com') || email.value === "") {
+        alert('Please enter a valid @gmail.com address');
+        return false;
     }
-    else{
-        return console.log('passed')
+
+    // 3. Password validation
+    if (password.value === "" || password.value !== confrimPassword.value ) {
+        alert('Passwords do not match or are empty');
+        return false;
     }
-}
-function lastValidate(){
-    if(lastName.value==""){
-        alert('your last name input is empty')
+
+    if(password.value.length < 6){
+        alert('lenght')
+        return false
     }
-    else{
-        return console.log('passed')
-    }
-}
-function phoneValidate(){
-    if(phoneNumber.value==""){
-        alert('your phone number input is empty')
-    }
-    else{
-        return console.log('passed')
-    }
-}
-function emailValidate(){
-    if(!email.value.endsWith('@gmail.com') ){
-        alert('incorrect email')
-    }
-    else{
-        return console.log('passed')
-    }
-}
-function passwordValidate(){
-    if(password.value !== confrimPassword.value){
-        alert('the passwords do not much')
-    }
+
+    // If all checks pass, return true
+    return true;
 }
 
-submitBtn.addEventListener('click',(e)=>{
-    console.log('clicked')
-    e.preventDefault()
-    const user =new formInfo(firstName.value,email.value,password.value,lastName.value,phoneNumber.value,confrimPassword.value)
-    addToStorement(user)
+function approve() {
+    const user = new formInfo(
+        firstName.value, 
+        email.value, 
+        password.value, 
+        lastName.value, 
+        phoneNumber.value, 
+        confrimPassword.value
+    );
+    addToStorement(user);
+    console.log("Storage:", storementArea);
+}
 
-    console.log(storementArea)
-
-    // input validation
-    firstValidate()
-    lastValidate()
-    phoneValidate()
-    emailValidate()
-    passwordValidate()
+submitBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevents page reload
     
-    // clear form 
-    clearForm()
-
-    
-
-})
+    if (validationCheck()) {
+        approve();
+        alert('Registration successful!');
+        clearForm();
+    } else {
+        console.log('Validation failed');
+    }
+});
 
 
 
