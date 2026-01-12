@@ -8,16 +8,149 @@
     <link rel="stylesheet" href="trail.css">
   </head>
   <body>
-    <div class="container">
-      <div class="header">Header</div>
-      <div class="sidebar">Sidebar</div>
-      <div class="nav">Nav</div>
-      <div class="article">Article
-        <p>Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur bibendum turpis quis interdum semper. Sed at pharetra neque, nec lacinia diam. Suspendisse quis faucibus mi, aliquam porttitor ipsum. Vivamus condimentum eros id mattis pharetra. Duis varius eros nibh. Donec a venenatis eros. Fusce in mauris massa. Donec est metus, rhoncus eu leo sed, aliquet posuere nisl.</p>
-        <p>Cras ut ex in nibh accumsan ullamcorper. Fusce rutrum, metus id porta porttitor, leo ipsum congue velit, eu hendrerit lectus nisi a odio. Pellentesque tristique eros id nibh finibus euismod. Cras suscipit volutpat elit eget pulvinar. Vivamus at blandit leo. Aenean sodales ex non massa efficitur, et egestas neque dapibus. In consequat hendrerit ex, nec finibus magna faucibus eu. Aliquam a libero non erat sollicitudin condimentum. In ac fringilla nisi. Sed pharetra ut turpis id luctus. Proin posuere tortor ac tempus luctus. Donec vitae est et neque faucibus posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    <form
+  action="https://formspree.io/f/xeeeqang"
+  class="fs-form fs-layout__2-column"
+  target="_top"
+  method="POST"
+>
+  <div class="fs-field">
+    <label class="fs-label" for="full-name">Full Name</label>
+    <input
+      class="fs-input"
+      id="full-name"
+      name="full-name"
+      placeholder="Enter your name (optional)"
+    />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="email-address">Email Address</label>
+    <input
+      class="fs-input"
+      id="email-address"
+      name="email-address"
+      placeholder="Enter your email address"
+      required
+    />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="company-name">Company Name</label>
+    <input
+      class="fs-input"
+      id="company-name"
+      name="company-name"
+      placeholder="Enter your company (optional)"
+    />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="job-title">Job Title</label>
+    <input
+      class="fs-input"
+      id="job-title"
+      name="job-title"
+      placeholder="Enter your job title (optional)"
+    />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label">Topics of Interest</label>
+    <div class="fs-checkbox-group">
+      <div class="fs-checkbox-field">
+        <div class="fs-checkbox-wrapper">
+          <input
+            class="fs-checkbox"
+            id="topics-of-interest-product-updates"
+            name="topics-of-interest"
+            required
+            type="checkbox"
+            value="product-updates"
+          />
+        </div>
+        <div>
+          <label class="fs-label" for="topics-of-interest-product-updates">
+            Product Updates
+          </label>
+        </div>
       </div>
-      <div class="footer">Footer</div>
+      <div class="fs-checkbox-field">
+        <div class="fs-checkbox-wrapper">
+          <input
+            class="fs-checkbox"
+            id="topics-of-interest-blog-posts"
+            name="topics-of-interest"
+            required
+            type="checkbox"
+            value="blog-posts"
+          />
+        </div>
+        <div>
+          <label class="fs-label" for="topics-of-interest-blog-posts">
+            Blog Posts
+          </label>
+        </div>
+      </div>
+      <div class="fs-checkbox-field">
+        <div class="fs-checkbox-wrapper">
+          <input
+            class="fs-checkbox"
+            id="topics-of-interest-promotions"
+            name="topics-of-interest"
+            required
+            type="checkbox"
+            value="promotions"
+          />
+        </div>
+        <div>
+          <label class="fs-label" for="topics-of-interest-promotions">
+            Promotions
+          </label>
+        </div>
+      </div>
+      <div class="fs-checkbox-field">
+        <div class="fs-checkbox-wrapper">
+          <input
+            class="fs-checkbox"
+            id="topics-of-interest-events"
+            name="topics-of-interest"
+            required
+            type="checkbox"
+            value="events"
+          />
+        </div>
+        <div>
+          <label class="fs-label" for="topics-of-interest-events">Events</label>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="email-frequency">
+      Preferred Email Frequency
+    </label>
+    <select
+      class="fs-select"
+      id="email-frequency"
+      name="email-frequency"
+      required
+    >
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+      <option value="occasionally">Occasionally</option>
+    </select>
+  </div>
+  <div class="fs-field col-span-full">
+    <label class="fs-label" for="referral-source">
+      How Did You Hear About Us?
+    </label>
+    <input
+      class="fs-input"
+      id="referral-source"
+      name="referral-source"
+      placeholder="Let us know how you found us (optional)"
+    />
+  </div>
+  <div class="fs-button-group">
+    <button class="fs-button" type="submit">Subscribe</button>
+  </div>
+</form>
   </body>
 </html>

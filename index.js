@@ -39,7 +39,6 @@ function clearForm(){
     confrimPassword.value=""
 }
 
-// ... keep your variable declarations and class as they are ...
 
 function validationCheck() {
     // 1. Check for empty fields
@@ -90,7 +89,7 @@ submitBtn.addEventListener('click', (e) => {
         alert('Registration successful!');
         clearForm();
     } else {
-        console.log('Validation failed');
+        alert('Validation failed');
     }
 });
 
